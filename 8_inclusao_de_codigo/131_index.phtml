@@ -1,0 +1,12 @@
+<?php
+    include_once "131_php_e_html.php";
+?>
+<h1>Seja bem vindo ao nosso site</h1>
+<p><?= $nome; ?> Veja as nossas ofertas.</p>
+
+<h2>Confira nossos produtos:</h2>
+<ul>
+    <?php foreach($produtos as $produto): ?>
+        <li><?= $produto; ?></li>
+    <?php endforeach; ?>
+</ul>

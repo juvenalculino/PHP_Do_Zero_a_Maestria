@@ -1,0 +1,83 @@
+1-introdução
+2-apresentação do curso
+3-o que faz o php
+    * O php pode ser dividido em duas vertentes
+        - Programação backend: criação de sites dinâmicos, conexão e interação com 
+        bancos de dados, geração de gráficos, documentos de xml e pdf;
+        - Scripts de linha de comando: rodar scripts para que ações sejam executadas no 
+          computador ou remotamente, administração de sistemas até mesmo CRONs;
+        
+4-o que é php
+    * Uma linguagem de programação que foi desenvolvida para o HTML dinâmico;
+    * Linguagem de script e open source;
+    * O foco de php é o desenvolvimento web;
+    * Os programas são executados em server side (lado do servidor, backend);
+    * PHP significa: Personal Home Page (P) e Hypertext Preprocessor (HP)
+
+5-uma breve historia
+    * O criador foi Rasmus Lerdord;
+    * O ano de lancamento foi 1994;
+    * A linguagem já está na versão 8
+        - diversas melhorias foram implementadas
+    * A ideia principal era deixar o HTML dinâmico, não havia pretensão de ser o que é hoje;
+    * Quase 80% dos sites hoje (2020) contém PHP;
+
+6-instalando o visual code
+7-instalando o php no windows
+8-executando php no windows
+
+9-instalando e executando php no linux
+    * No linux podemos instalar o php de forma indepensente, porém
+      é interessante fazer a instalação da pilha lamp
+    * Linux, apache, mysql e PHP
+    * Com isso podemos criar e executar não só arquivos de php mas também projetos web completos;
+    * # sudo apt update -y
+    * # sudo apt install apache2
+    * # sudo ufw app list
+    * # sudo ufw app info "Apache Full"
+    * # sudo ufw allow in "Apache Full"
+    * # sudo apt install mysql-server
+    * # sudo apt install php libapache2-mod-php php-mysql
+    * # sudo systemctl restart apache2
+    * # cd /var/www/html
+    * # sudo nano test.php
+
+10-o que é localhost
+    * É a forma de acessar o servidor local da nossa maquina;
+    * Equivale ao IP 127.0.0.1, ou seja, nosso PC;
+    * Assim podemos simular como se o site ou arquivo que estamos acessando
+      é processado em um servidor;
+    * IP significa Internet Protocol;  
+
+11-a sintaxe do php
+    * O PHP vai interpretar um bloco de código em nosso arquivo apenas se ele
+      estiver entre as tags de PHP;
+    * A abertura é: <?php 
+    * E o fechamento: ?>
+    * Coloque ; a cada intrução;
+    * Todo o código dentro destas tags será executado pelo PHP, e após isso será impresso na tela;
+    EX: <?php
+            echo 'hello word';
+        ?>
+        Isso aqui fora não é php é apenas texto puro.
+
+12-exercicio_1
+    <?php
+            echo 'Olá meu nome é Juvenal';
+        ?>
+13-php e suas dependências
+    * Podemos checar como o PHP e suas dependências estão instaladas no nosso pc
+    * O nome da função é phpinfo()
+    * Ela exibe as versões também dos pacotes instalados;
+    * Útil para saber como  o servidor está configurado.
+    EX:
+        <?php
+            phpinfo();
+        ?>
+
+14-como tirar o máximo proveito do curso
+    * Faça todos os exemplos com o editor aberto e codifique;
+    * Crie seus próprios exemplos com o que foi aprendido na aula;
+    * Crie também projetos pessoais;
+    * Faça anotações dos pontos mais importantes;
+    * Dica bônus: Assista a aula e depos execute;
